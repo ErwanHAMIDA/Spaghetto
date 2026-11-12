@@ -16,6 +16,9 @@ struct SPAGHETTO_API FMusicBossEvent
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Music")
     int32 BeatIndex = 1;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Music")
+    bool IsLooping;
+
     UPROPERTY(EditAnywhere, Instanced, BlueprintReadWrite, Category = "Music")
     TObjectPtr<UMusicBossAction> Action;
 };
